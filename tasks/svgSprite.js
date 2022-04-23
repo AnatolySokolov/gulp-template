@@ -16,10 +16,10 @@ const config = {
     symbol: {
       prefix: '.icon--%s',
       dimensions: '%s',
-      sprite: '../sprite.svg',
+      sprite: '../../sprite.svg',
       render: {
         scss: {
-          dest: '../svgSprite.scss',
+          dest: '../../../styles/utils/svgSprite.scss',
         },
       },
     },
