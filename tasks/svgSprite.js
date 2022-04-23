@@ -14,7 +14,7 @@ const svgSpritePath = {
 const config = {
   mode: {
     symbol: {
-      // prefix: '.svgSprite-%s',
+      prefix: '.icon--%s',
       dimensions: '%s',
       sprite: '../sprite.svg',
       render: {
