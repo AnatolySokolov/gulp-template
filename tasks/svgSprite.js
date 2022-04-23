@@ -14,7 +14,7 @@ const svgSpritePath = {
 const config = {
   mode: {
     symbol: {
-      // prefix: '.svgSprite-%s',
+      prefix: '.icon--%s',
       dimensions: '%s',
       sprite: '../sprite.svg',
       render: {
@@ -36,8 +36,6 @@ export default function svgSprite() {
     .pipe(
       cheerio({
         run: function ($) {
-          $('[fill]').removeAttr('fill');
-          $('[stroke]').removeAttr('stroke');
           $('[style]').removeAttr('style');
         },
         parseOptions: { xmlMode: true },
